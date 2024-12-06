@@ -1,0 +1,172 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3F3F3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.toggle-switch {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-btn {
+  background: white;
+  border: none;
+  color: #00bfa5;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn.active {
+  background: #00bfa5;
+  color: white;
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  flex: 1 1 300px;
+  transition: transform 0.3s;
+}
+
+.rules {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  flex: 1 1 300px;
+  transition: transform 0.3s;
+}
+
+.rules ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.rules ul li {
+  margin: 10px 0;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px 5px;
+}
+
+/*.featured {
+  border: 2px solid #00bfa5;
+}*/
+
+.pricing-card h3 {
+  color: #00bfa5;
+  margin-bottom: 10px;
+}
+
+.pricing-card h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-card ul li {
+  margin: 10px 0;
+}
+
+.sign-up-btn {
+  background: #00bfa5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 120px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sign-up-btn:hover {
+  background: #008c7e;
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+    background-color: White;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  font-family: Sans-Serif;
+  color: black;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .pricing-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .pricing-card h4 {
+    font-size: 20px;
+  }
+
+  .sign-up-btn {
+    padding: 8px 15px;
+  }
+}
